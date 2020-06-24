@@ -79,7 +79,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="NIM 1801313 dari kelas T Malam. Alamat email dan kontak saya, neesiasynandra@gmail.com , 085753631406 . Terimakasih dan selamat berteman :) "
+                    android:text="NIM 18101313 dari kelas T Malam. Alamat email dan kontak saya, neesiasynandra@gmail.com , 085753631406 . Terimakasih dan selamat berteman :) "
                     android:textAlignment="center"
                     android:textStyle="italic"
                     android:textSize="15sp"
