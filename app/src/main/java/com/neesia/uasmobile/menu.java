@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class menu extends AppCompatActivity {
-    Button btnprofil, btnkeluar, btndatabuku;
+    Button btnprofil, btnkeluar, btndatabuku, btndatafilm ;
     uasmobile sp;
     Activity context = this;
 
@@ -21,21 +21,23 @@ public class menu extends AppCompatActivity {
         btnprofil = (Button) findViewById(R.id.btnprofil);
         btnkeluar = (Button) findViewById(R.id.btnkeluar);
         btndatabuku = (Button) findViewById(R.id.btndatabuku);
+        btndatafilm = (Button) findViewById(R.id.btndatafilm);
         sp = new uasmobile();
 
-        btnprofil.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent inten = new Intent(menu.this, profil.class);
-                startActivity(inten);
-            }
-        });
 
         btnkeluar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                sp.clearuasmobile(context);
-                finish();
+                                Intent inten = new Intent(menu.this,MainActivity.class);
+                startActivity(inten);
+            }
+        });
+
+        btnprofil.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten = new Intent(menu.this,profil.class);
+                startActivity(inten);
             }
         });
 
@@ -46,6 +48,15 @@ public class menu extends AppCompatActivity {
                 startActivity(inten);
             }
         });
+
+        btndatafilm.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent inten = new Intent(menu.this, datafilm.class);
+                startActivity(inten);
+            }
+        });
+
 
     }
 }

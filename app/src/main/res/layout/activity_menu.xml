@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:adjustViewBounds="true"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="5dp"
             android:src="@drawable/wp2141405">
         </ImageView>
         <TextView
@@ -25,7 +25,7 @@
             android:layout_height="wrap_content"
             android:text="MENU"
             android:textStyle="bold"
-            android:textSize="35sp"
+            android:textSize="25sp"
             android:layout_marginTop="5dp"
             android:gravity="center"
             android:paddingLeft="0dp"
@@ -37,8 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:layout_margin="5dp"
-            android:layout_marginTop="5dp"
+            android:layout_margin="3dp"
+            android:layout_marginTop="3dp"
             android:orientation="horizontal">
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -57,13 +57,15 @@
                         android:background="@drawable/buttonbuku"
                         android:text="Buku"
                         android:textStyle="bold"
-                        android:layout_marginTop="30dp"
-                        android:ems="10"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginLeft="25dp"
+                        android:ems="8"
                         android:id="@+id/btndatabuku">
                     </Button>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
-
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -71,22 +73,34 @@
                 app:cardPreventCornerOverlap="true"
                 app:cardUseCompatPadding="true"
                 app:contentPadding="10dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:orientation="vertical">
-                        <Button
-                            android:layout_width="75dp"
-                            android:layout_height="50dp"
-                            android:background="@drawable/buttonbuku"
-                            android:text="Profil"
-                            android:textStyle="bold"
-                            android:layout_marginTop="30dp"
-                            android:ems="10"
-                            android:id="@+id/btnprofil">
-                        </Button>
-                    </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/buttonbuku"
+                        android:text="Film"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginLeft="25dp"
+                        android:ems="8"
+                        android:id="@+id/btndatafilm">
+                    </Button>
+                </LinearLayout>
             </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_margin="3dp"
+            android:layout_marginTop="3dp"
+            android:orientation="horizontal">
 
             <androidx.cardview.widget.CardView
                 android:layout_width="0dp"
@@ -102,9 +116,38 @@
                     <Button
                         android:layout_width="75dp"
                         android:layout_height="50dp"
+                        android:background="@drawable/buttonbuku"
+                        android:text="Profil"
+                        android:textStyle="bold"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginLeft="25dp"
+                        android:ems="8"
+                        android:id="@+id/btnprofil">
+                    </Button>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                app:cardPreventCornerOverlap="true"
+                app:cardUseCompatPadding="true"
+                app:contentPadding="8dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <Button
+                        android:layout_width="75dp"
+                        android:layout_height="50dp"
                         android:text="Keluar"
                         android:textStyle="bold"
-                        android:layout_marginTop="30dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_marginLeft="25dp"
                         android:ems="10"
                         android:id="@+id/btnkeluar"
                         android:background="@drawable/buttonbuku">

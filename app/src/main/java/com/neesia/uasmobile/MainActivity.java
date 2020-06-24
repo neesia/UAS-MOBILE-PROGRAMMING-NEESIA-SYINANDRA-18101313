@@ -1,5 +1,6 @@
 package com.neesia.uasmobile;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -31,14 +32,20 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View arg0) {
                 String username = txtusername.getText().toString();
+                String password = txtpassword.getText().toString();
 
-                if(username.equals("")){
-                    Toast.makeText(getBaseContext(), "Username masih kosong!", Toast.LENGTH_LONG).show();
-                }else {
-                    sp.save(context,"username",username);
+                if (username.equals("neesia") && password.equals("1234")){
+                    //jika login berhasil
+                    Toast.makeText(getApplicationContext(), "Anda berhasil Login!",Toast.LENGTH_LONG).show();
                     Intent menu = new Intent(MainActivity.this, menu.class);
-                    startActivity(menu);
+                    sp.save(context,"username", username);
+                    MainActivity.this.startActivity(menu);
                     Toast.makeText(getBaseContext(), "Berhasil Login!", Toast.LENGTH_LONG).show();
+                    finish();
+                }else {
+                    //jika login gagal
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+                    builder.setMessage("Username atau Password Anda Salah!").setNegativeButton("Retry", null).create().show();
                 }
             }
         });

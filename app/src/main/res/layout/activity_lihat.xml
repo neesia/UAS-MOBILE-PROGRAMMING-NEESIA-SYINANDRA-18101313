@@ -8,7 +8,7 @@
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
     tools:context="com.neesia.uasmobile.tambahactivity">
-    
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@
         android:layout_height="wrap_content"
         android:text=""
         android:id="@+id/txtjudulbuku">
-        </EditText>
+    </EditText>
 
     <TextView
         android:layout_width="wrap_content"
@@ -42,7 +42,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
-        android:inputType="number"
         android:id="@+id/txttahunterbit">
     </EditText>
 
@@ -57,13 +56,13 @@
         android:text=""
         android:id="@+id/txtpenerbit">
     </EditText>
-    
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SIMPAN"
+        android:text="KEMBALI"
         android:background="@drawable/button"
-        android:id="@+id/btnsimpan">
+        android:id="@+id/btnkembali">
     </Button>
 
 

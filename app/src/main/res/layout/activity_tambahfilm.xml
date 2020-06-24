@@ -7,57 +7,58 @@
     android:layout_height="match_parent"
     android:layout_marginLeft="10dp"
     android:layout_marginRight="10dp"
-    tools:context="com.neesia.uasmobile.tambahactivity">
-    
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Judul Buku">
-    </TextView>
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text=""
-        android:id="@+id/txtjudulbuku">
-        </EditText>
+    tools:context="com.neesia.uasmobile.tambahfilm">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Pengarang">
+        android:text="Judul Film">
     </TextView>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
-        android:id="@+id/txtnamapengarang">
+        android:id="@+id/txtjudulfilm">
     </EditText>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tahun Terbit">
+        android:text="Judul Versi Indonesia">
+    </TextView>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:id="@+id/txtjudulversiindonesia">
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tahun Tayang">
     </TextView>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
         android:inputType="number"
-        android:id="@+id/txttahunterbit">
+        android:id="@+id/txttahuntayang">
     </EditText>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Penerbit">
+        android:text="Peringkat">
     </TextView>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text=""
-        android:id="@+id/txtpenerbit">
+        android:inputType="number"
+        android:id="@+id/txtperingkat">
     </EditText>
-    
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
